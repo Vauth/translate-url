@@ -7,10 +7,13 @@ Translate a website using google & permanent URL.
 ### Website:
 - Open [the website](https://vauth.github.io/web-translate) & enter your target URL.
 - Press translate to redirect to translated webpage.
+
+**Example:** [vauth.github.io/web-translate](https://vauth.github.io/web-translate/)
 ### Parameter:
 - Use `https://vauth.github.io/web-translate/?url=URL`.
 - You will be redirected to translated webpage.
 
+**Example:** [us.china-embassy.gov.cn](https://vauth.github.io/web-translate/?url=http://us.china-embassy.gov.cn)
 <br>
 
 ## 🗝 Note
