@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="512x512" href="./files/favicon.png">
+    <meta property="og:image" content="./files/favicon.png"> 
+    <title>URL Translator</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="description" content="URL Translator." />
+    <meta name="keywords" content="translate, google, website, webpage" />
+    <meta name="author" content="execal">
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <div class="container">
+        <h1>URL Translator</h1>
+        <form id="urlForm">
+            <input type="text" id="urlInput" placeholder="Enter website URL" required>
+            <button type="submit" id="submitBtn">Translate</button>
+        </form>
+        <p id="error" class="error"></p>
+    </div>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                const button = document.getElementById('submitBtn');
+                button.click();
+            }
+        });
+        document.getElementById('urlForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const urlInput = document.getElementById('urlInput').value;
+            const pattern = /^(https?:\/\/[^\s]+|www\.[^\s]+)$/;
+
+            if (pattern.test(urlInput)) {
+                const translatedUrl = `https://translate.google.com/translate?sl=auto&tl=en&hl=en-US&u=${encodeURIComponent(urlInput)}&client=webapp`;
+                location.href = translatedUrl;
+            } else {
+                document.getElementById('error').textContent = 'Please enter a valid URL.';
+            }
+        });
+    </script>
+</body>
+</html>
