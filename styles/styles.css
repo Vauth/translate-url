@@ -29,6 +29,11 @@ input[type="text"] {
   border-radius: 4px;
 }
 
+input[type="text"]:focus {
+  border-color: #277EE2;
+  outline: none;
+}
+
 button {
   padding: 10px 20px;
   background-color: #277EE2;
@@ -44,10 +49,37 @@ button:hover {
 
 #error {
   color: red;
-  width: 80%;
+  width: 50%;
   margin-top: 8px;
+  box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.268);
   background-color: rgba(255, 0, 0, 0.121);
-  border-radius: 4px;
+  border-radius: 4px; 
   margin: auto;
   margin-top: 10px;
+}
+
+#country-codes {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><polygon points="0,0 10,0 5,5" fill="%23333"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+#country-codes:focus {
+  border-color: #277EE2;
+  outline: none;
+}
+
+#country-codes option {
+  color: #999;
 }
