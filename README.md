@@ -8,7 +8,7 @@ Translate a website using google & permanent URL.
 <a href="https://addons.mozilla.org/en-US/firefox/addon/translate-url"><img src="https://github.com/user-attachments/assets/7295317a-2219-4422-b826-3b61452a6c91" width="200px"></a>
 
 ### Website:
-- Open the [website](https://vauth.github.io/web-translate).
+- Open the [website](https://vauth.github.io/translate-url).
 - Enter your target URL.
 - Choose your preferred language.
 - Press translate to redirect to translated webpage.
