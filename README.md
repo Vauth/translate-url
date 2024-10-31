@@ -1,10 +1,12 @@
 # Webpage Translator 
 Translate a website using google & permanent URL.
 
+
 <br>
 
 ## 📦 Usage
 ### Extension:
+###### Checkout [releases](https://github.com/Vauth/translate-url/releases/tag/v1.0) & install `.xpi` file.
 <a href="https://addons.mozilla.org/en-US/firefox/addon/translate-url"><img src="https://github.com/user-attachments/assets/7295317a-2219-4422-b826-3b61452a6c91" width="200px"></a>
 
 ### Website:
