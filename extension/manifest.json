@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Translate URL",
+    "version": "1.0",
+    "description": "Translate pages using Google Translate.",
+    "permissions": [
+      "contextMenus",
+      "tabs",
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "icons": {
+      "75": "icons/icon.png"
+    }
+  }
+  
